@@ -1,0 +1,17 @@
+{% extends 'blog/base_blog.html' %}
+{% block title %}
+    title  {{name}}
+{% endblock %}
+{% block content %}
+<div class="card ">
+    {% for post in posts %}
+      <div class="card mb-3">
+          <div class="card-header ">{{ post.date_pub }}</div>
+          <div class="card-body ">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">{{ post.body|truncatewords:15 }}</p>
+                <a href="#" class="btn btn-primary">Read</a>
+          </div>
+  </div>
+{% endfor %}
+{% endblock %}

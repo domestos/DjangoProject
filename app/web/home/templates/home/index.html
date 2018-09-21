@@ -1,0 +1,14 @@
+{% extends 'home/base_home.html' %}
+
+{% block title %}
+    title  {{name}}
+{% endblock %}
+
+
+{% block content %}
+
+  <h2 class="mb-5">Show values in loop:</h2>
+  {% for name in list_names %}
+      <p>{{ name}}</p>
+  {% endfor %}
+{% endblock %}
