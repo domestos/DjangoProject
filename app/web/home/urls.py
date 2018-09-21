@@ -3,5 +3,5 @@ from django.contrib import admin
 from .views import *
 
 urlpatterns = [
-    url('',show_home_page),
+    url('',show_home_page, name='home_url'),
 ]

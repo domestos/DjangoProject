@@ -10,4 +10,4 @@ from django.http import HttpResponse
 def show_home_page(request):
     name = 'valera'
     list_names = ['Valera','Oleg','Mandarin']
-    return render(request, 'home/index.html', context={'name':name, 'post':post});
+    return render(request, 'home/index.html', context={'name':name, 'list_names':list_names});
